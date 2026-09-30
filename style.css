@@ -10,9 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
-    background: #080808;
-    color: #f4f0e8;
+    background: linear-gradient(135deg, #f6edff, #eaf2ff, #dcecff);
+    color: #17172f;
     font-family: "DM Sans", sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
@@ -25,6 +26,7 @@ a {
 
 img,
 video {
+
     max-width: 100%;
     display: block;
 }
@@ -39,25 +41,25 @@ button {
 ========================================================= */
 
 :root {
+    --black: #f6edff;
+    --black-soft: #edf0ff;
+    --black-card: #ffffff;
 
-    --black: #080808;
-    --black-soft: #101010;
-    --black-card: #141414;
+    --gold: #5338f5;
+    --gold-light: #a855f7;
+    --gold-dark: #3923c9;
 
-    --gold: #c9a45c;
-    --gold-light: #e3c47b;
-    --gold-dark: #8d6d32;
+    --white: #17172f;
+    --text: #393956;
+    --muted: #74748f;
 
-    --white: #f4f0e8;
-    --text: #d8d3c9;
-    --muted: #85817a;
-
-    --border: rgba(201, 164, 92, 0.25);
+    --border: rgba(83, 56, 245, 0.18);
 
     --max-width: 1240px;
 
     --transition: 0.35s ease;
 }
+
 
 
 /* =========================================================
@@ -1882,4 +1884,165 @@ button {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
     }
+}
+
+/* ===== COMPLETE LIGHT PURPLE + BLUE THEME ===== */
+
+html {
+    background: #f6edff;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f0ff 0%, #edf2ff 55%, #dcecff 100%) !important;
+    color: #17172f !important;
+}
+
+/* All main sections */
+section,
+.section,
+main {
+    background-color: transparent;
+    color: #17172f;
+}
+
+/* Header and navigation */
+header,
+nav,
+.navbar,
+.site-header {
+    background: rgba(255, 255, 255, 0.88) !important;
+    color: #17172f !important;
+    border-color: rgba(83, 56, 245, 0.12) !important;
+    backdrop-filter: blur(14px);
+}
+
+/* Headings and text */
+h1, h2, h3, h4, h5, h6,
+p, li, label {
+    color: #17172f;
+}
+
+.section-number,
+.section-heading h2 span,
+.hero h1 span,
+.contact-box h2 span {
+    color: #5338f5 !important;
+}
+
+/* Cards and content boxes */
+.card,
+.service-card,
+.work-card,
+.software-card,
+.contact-box,
+.about-card,
+.project-card {
+    background: rgba(255, 255, 255, 0.78) !important;
+    color: #17172f !important;
+    border-color: rgba(83, 56, 245, 0.18) !important;
+    box-shadow: 0 8px 28px rgba(83, 56, 245, 0.07);
+}
+
+/* Buttons */
+button,
+.btn,
+.button,
+.contact-button,
+a.btn,
+a.button {
+    background: linear-gradient(135deg, #5338f5, #a855f7) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    transition: all 0.3s ease;
+}
+
+/* Hover, touch and keyboard focus */
+button:hover,
+button:active,
+button:focus-visible,
+.btn:hover,
+.btn:active,
+.button:hover,
+.button:active,
+.contact-button:hover,
+.contact-button:active,
+a.btn:hover,
+a.button:hover {
+    background: linear-gradient(135deg, #4327e8, #9333ea) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5338f5;
+}
+
+/* Form fields */
+input,
+textarea,
+select {
+    background: #ffffff !important;
+    color: #17172f !important;
+    border-color: rgba(83, 56, 245, 0.25) !important;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.65) !important;
+    color: #393956 !important;
+    border-color: rgba(83, 56, 245, 0.15) !important;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    body {
+        background: linear-gradient(160deg, #f8f0ff, #eaf2ff) !important;
+    }
+}
+
+/* Make software cards text bigger and bolder */
+.software-card h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #17172f !important;
+    margin-bottom: 10px;
+}
+
+.software-card p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #454563 !important;
+}
+
+/* Footer text */
+footer p,
+footer span,
+footer a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #292947 !important;
+}
+
+footer {
+    color: #292947 !important;
+}
+
+footer h3,
+footer strong {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #17172f !important;
+}
+
+/* Copyright text */
+footer .copyright {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #454563 !important;
 }
